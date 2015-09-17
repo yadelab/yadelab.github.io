@@ -1,0 +1,16 @@
+body {
+    padding: 52px;
+    background-color: aliceblue;
+}
+h1 {
+    background-color: #6495ed;
+    font-size: 44px;
+}
+.social {
+    line-height: 42px;
+    font-size: larger;
+}
+span {
+-    color: magenta;		   
+ display: block;
+}
