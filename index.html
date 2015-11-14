@@ -3,55 +3,224 @@
 <html>
 
  <head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.4/components/component-name.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
  <title>My First HTML Webpage</title>
 
- <meta name="author" content="Yadel Abraham” />
+ <style >
+ 
+    
+  p {
+        font-size: 18px;
+    margin-top: 17px;
+  }
+  h1 {
+    color: #D9534A
+
+  }
+  i {
+    font-size: 14px;
+}
+  div#yadelBio {
+    text-align: center;
+        padding: 88px;
+}
+.exprSpace {
+    padding: 7px;
+}
+/*  div#yadelBio {
+    padding-top: 7em;
+}*/
+  
+  button.btn.btn-default.dropdown-toggle {
+    height: 68px;
+    font-size: 28px;
+}
+button.btn.btn-default {
+    height: 68px;
+}
+  .input-group {
+    margin-left: -49px;
+}
+.col-md-3 :hover {
+  background-color: black;
+}
+/*img {
+    float: left;
+    margin: 0 0 10px 10px;
+}*/
+ /* 
+  div#section42 {
+    height: 600px !important;
+}
+  div#section1 {;
+    background-repeat: no-repeat;
+    background-size: 1920px 509px;
+}
+  body {
+      position: relative; 
+  }*/
+ 
+ #yadelBio {height: 570px;}
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #434242;}
+  #section3 {padding-top:50px;height:1200px;color: #333333; background-color: #FFFAF0;}
+  #section41 {padding-top:50px;height:500px;color: #fff; }
+  #section42 {padding-top:50px;height:530px;color: #8B8B8B;}</style>
 
 
 
-html;charset=utf-8" />
+<body>
+<div>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Yadel</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+           
+                <li><a href="#section3">Experience</a></li>
+                <li><a href="#section1">Projects</a></li>
+                <li><a href="#section2">Activites </a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section41">Donate</a></li>
+                    <li><a href="#section42">Lorem</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>    
+<div id="yadelBio">
+  <h1>About Me </h1>
+  <div>
+	 <img src="mypic.jpg"  class="img-circle" alt="Cinque Terre" width="280" height="236">
+  </div>
+  <div></div>
+   <p align="justify">
+    Welcome to my personal website, my name is Yadel Abraham and I am a Junior at UC Berkeley. I was born in Ethiopia but consider myself to be a Bay Area native. I am passionate about teaching computer science and developing software for social good. I am interested in software development, product design and entrepreneurship. A fun fact about me is that I can speak four different languages: English, Amharic, Oromo, and Spanish. In my freetime, I enjoy reading tech articles, going to hackathons and playing soccer. </p>
+      
 
-
-
-  <link rel="stylesheet" type="text/css" href="style.css" />
- <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
- </head>
-<!-- 
- This is the body text -->
-
- <body >
-
-
-<div class="container">
-<h2>Yadel A. Abraham </h2>
-
-
-  <img src="mypic.jpg" class="img-circle alt="Yadel" width="100" height="86">
-
-
-<div class="yadelBio" >
-	<p>My name is Yadel Abraham. A bay area native and a junior at UC Berkeley intending to Major in Computer Science. My interests Lie on:
-		<ul>
-			<li>Software Development </li> 
-			<li>Product Design and Management</li>
-			<li>Developing Software for social good. </li>
-		</ul>
-
+   
 
 	</div>
 
-</div>
-<div class="social">
-<a href="https://www.linkedin.com/pub/yadel-abraham/b2/bb6/739"> My Professional Network </a>
 
-<a href="https://github.com/yadelab">My Github Portfolio</a>
+<div id="section3" class="container-fluid">
+
+  <div class="exprSpace">
+  <h1>Experience</h1>
+  <h4> Research Apperentice , Social Apps Lab, CITRIS UC Berkeley</h4>
+  <h5><i>September 2015 - Present</i></h5>
+ <p> Performed analysis on various voting APIs based on feature and Design. Currently working on the back-end of voting API Endpoints for AppCivist, software platform for democratic assembly and collective action that helps social activists make their own proposals to better their community, using the Play(Java) Framework.<br><i>
+ Skills: Java MVC Framework (PLAY), Json API Design, Object Oriented Programming, Buiding large Systems</i></p>
 
 </div>
+ 
+ <div class="exprSpace">
+<h4>Customer Success and Product Support Intern, Newton Software, San Francisco</h4>
+ <h5><i>June - August 2015</i></h5>
+ <p> Created careers web pages for Newtons (Applicant Tracking System) clients using HTML, XML and CSS to ensure similar look
+and feel (UX) to client’s corporate site. Managed an ongoing project to convert over 60 customer career pages using Newtons cloud and mobile apply technologies. Supported Newtons Customer Success Team by configuring numerous clients to ensure they were set up properly before go-live. Managed ad-hoc requests from Newtons executive team to support special projects. <br> <i>Skills: HTML, CSS, XML, some Jquery, SAAS and Enterprise products</i></P>
+</div>
+
+ <div class="exprSpace">
+
+ <h4>Programmer Intern, Addiction Pharmacology Research Laboratory California Pacific Medical Center Research Institute</h4>
+ <h5><i>July 2015 - Present</i></h5>
+ <p> Creating modification and enhancement to a text messaging program built using Google App Engine in Python. It's depolyed on Google's Appengine, and uses Twilio API to send and receive text messages, all the data for the study stored and managed using Google App Engine’s Datastore. <br> <i>Skills: Python, Twilio API, Google's API
+</i></P>
+</div>
+
+ <div class="exprSpace">
+
+<h4>Technical Team Member, Social Sciences Data Lab, UC Berkeley</h4>
+ <h5><i>February 2015 - Present</i></h5>
+ <p>As an employee of DLAB, these are my roles. Work with data, data analysis methods, programming languages and tools, and software. Help fellow students harness computing resources to explore big data for social sciences research. Provide tech orientation/training to new staff and assist staff as a computer/IT resource. Provide daily support for the 30­-40 trainings and workshops we run every semester. Track hardware and software on all D-Lab equipment and maintain tracking of and communications about daily events. Run the D­-Lab help desk, collaborate with the rest of the U-Tech team to ensure adequate staffing and timely responses to user questions and concerns. 
+ </P>
+
+</div>
+
+ <div class="exprSpace">
+
+<h4>Computer Science 61B Course Lab Assistant</h4>
+ <h5><i>February 2015 - May 2015</i></h5>
+ <p> Helped 25+ students in the Data Stuctures and Algorithms course at UC Berkeley complete, understand, and
+debug their weekly programming assignments.<br><i>Skills: Teaching, Java, Data Structures, Algorithms</i></P>
+</div>
+
+<div class="exprSpace">
+
+<h4>Student Fundraiser, Cal Calling Center, UC Berkeley</h4>
+ <h5><i>June 2014 - November 2014</i></h5>
+ <p> Called over 75 Alumni per shift to raise donations for UC Berkeley. I developed a strong interpersonal and negotiation skills</P>
+   
+</div>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Projects</h1>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec hendrerit nisl, ut bibendum eros. Maecenas in nisl urna. Aliquam fringilla porttitor ex, congue congue ante viverra sed. Praesent nec interdum nibh. In hac habitasse platea dictumst. Integer eu elementum tellus, ac ultricies metus" -Ashley, <i>School Teacher</i> </p>
+</div>
+
+<div id="section2" class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <p>LinkedIn</p>
+    </div>
+    <div class="col-md-3">        
+      <p>Github</p>      
+    </div>
+    <div class="col-md-3">        
+      <p>Quora</p>      
+    </div>
+    
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+});
+</script>
 
  </body>
 
