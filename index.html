@@ -28,6 +28,7 @@
   }
   i {
     font-size: 14px;
+    color: green;
 }
   div#yadelBio {
     text-align: center;
@@ -39,7 +40,12 @@
 /*  div#yadelBio {
     padding-top: 7em;
 }*/
-  
+  a.btn.btn-primary.btn-lg {
+    margin-left: -70px;
+    margin-top: -11px;
+    padding-left: 20px;
+    background-color: green;
+}
   button.btn.btn-default.dropdown-toggle {
     height: 68px;
     font-size: 28px;
@@ -50,30 +56,19 @@ button.btn.btn-default {
   .input-group {
     margin-left: -49px;
 }
+.row {
+    font-size: 25px;
+}
 .col-md-3 :hover {
-  background-color: black;
+  background-color: white;
 }
-/*img {
-    float: left;
-    margin: 0 0 10px 10px;
-}*/
- /* 
-  div#section42 {
-    height: 600px !important;
-}
-  div#section1 {;
-    background-repeat: no-repeat;
-    background-size: 1920px 509px;
-}
-  body {
-      position: relative; 
-  }*/
+
  
- #yadelBio {height: 570px;}
+ #yadelBio {height: 580px;}
   #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #434242;}
+  #section2 {padding-top:50px;height:320px;color: #fff; background-color: #434242;}
   #section3 {padding-top:50px;height:1200px;color: #333333; background-color: #FFFAF0;}
-  #section41 {padding-top:50px;height:500px;color: #fff; }
+  #section41 {padding-top:50px;height:1260px;color: #333; }
   #section42 {padding-top:50px;height:530px;color: #8B8B8B;}</style>
 
 
@@ -95,14 +90,14 @@ button.btn.btn-default {
               <ul class="nav navbar-nav">
            
                 <li><a href="#section3">Experience</a></li>
-                <li><a href="#section1">Projects</a></li>
-                <li><a href="#section2">Activites </a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+                <li><a href="#section41">Projects</a></li>
+                <li><a href="#section2">Links </a></li>
+                <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#section41">Donate</a></li>
+                    <li><a href="#section">Donate</a></li>
                     <li><a href="#section42">Lorem</a></li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -118,6 +113,10 @@ button.btn.btn-default {
    <p align="justify">
     Welcome to my personal website, my name is Yadel Abraham and I am a Junior at UC Berkeley. I was born in Ethiopia but consider myself to be a Bay Area native. I am passionate about teaching computer science and developing software for social good. I am interested in software development, product design and entrepreneurship. A fun fact about me is that I can speak four different languages: English, Amharic, Oromo, and Spanish. In my freetime, I enjoy reading tech articles, going to hackathons and playing soccer. </p>
       
+      
+  <div class="container">
+    <p><a class="btn btn-primary btn-lg" href="mailto:yabraham@berkeley.edu" role="button">Contact Me</a></p>
+  </div>
 
    
 
@@ -131,7 +130,7 @@ button.btn.btn-default {
   <h4> Research Apperentice , Social Apps Lab, CITRIS UC Berkeley</h4>
   <h5><i>September 2015 - Present</i></h5>
  <p> Performed analysis on various voting APIs based on feature and Design. Currently working on the back-end of voting API Endpoints for AppCivist, software platform for democratic assembly and collective action that helps social activists make their own proposals to better their community, using the Play(Java) Framework.<br><i>
- Skills: Java MVC Framework (PLAY), Json API Design, Object Oriented Programming, Buiding large Systems</i></p>
+ Skills: Java MVC Framework (PLAY), RESTful Json API Design, Object Oriented Programming, Buiding large Systems</i></p>
 
 </div>
  
@@ -177,19 +176,61 @@ debug their weekly programming assignments.<br><i>Skills: Teaching, Java, Data S
 </div>
 <div id="section41" class="container-fluid">
   <h1>Projects</h1>
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec hendrerit nisl, ut bibendum eros. Maecenas in nisl urna. Aliquam fringilla porttitor ex, congue congue ante viverra sed. Praesent nec interdum nibh. In hac habitasse platea dictumst. Integer eu elementum tellus, ac ultricies metus" -Ashley, <i>School Teacher</i> </p>
+
+ <h4> RevDict </h4>
+ <h5><i>https://github.com/yadelab/rev-Dict</i></h5>
+ <h5><i>September 2015</i></h5>
+ <p> At HackJam Hackathon 2015, With a team of 4, I created a web-application using Python Flask that, given a staring and ending letter of words it searches and gives possible synonym outputs.The web-app can be used in solving word puzzles or when one is faced with writers block. <br> <i>Skills:Flask, Python, sqlite3, Bootstrap</i></P>
+
+<h4>cURL- A url shortner</h4>
+ <h5><i>https://github.com/INFO253-webarch/Team4</i></h5>
+  <h5><i>October 2015</i></h5>
+ <p>With a team of 3, created this simple url shortner Using Python's Flask for INFO 253, a graduate level web architecture course. </P>
+
+
+  <h4>Equal Read</h4>
+ <h5><i>https://github.com/dlab-berkeley/equal-read-interface</i></h5>
+  <h5><i>inprogress</i></h5>
+ <p> An ongoing project for a non profit called Equal Read. We are working towards creating a searchable interface of books with diverse characters, using the Django framework, Bootstrap, HTML </P>
+
+ <h4>Game of 2048</h4>
+ <h5><i>https://github.com/yadelab/Projects-/tree/master/Graphs</i></h5>
+  <h5><i>October 2014</i></h5>
+ <p> Programmed a variant of the game 2048, based on single-player computer game
+written by Gabriele Cirulli. I worked on reproducing this game for a class project using Java Programming
+Language. <br> <i>Skills: Java, Game Logic Design</i> </P>
+
+  <h4> Databases</h4>
+ <h5><i>https://github.com/yadelab/Projects-/tree/master/Databases</i></h5>
+  <h5><i>October 2014</i></h5>
+ <p> Developed miniature relational database management system (DBMS) that stores tables of data using the Java Programming language. Programmed a SQL like query to access information from command line. Obtained ample experience in test driven development and debugging programs. Performed analysis and on various data structures to improve efficency.<br> <i>Skills: Java, Relational Databases, Data Structures</i></P>
+
+  <h4>Graph Package</h4>
+ <h5><i>https://github.com/yadelab/Projects-/tree/master/Graphs</i></h5>
+  <h5><i>November 2014</i></h5>
+ <p> Wrote an entire Java library package to provide facilities to manipulating graphs from scratch. I also programmed a trip finder client that uses the graph properties. Gained experience in writing  efficient algorithms that utlize heuristic analysis. <br> <i>Skills: Shortest Path Algorithms, Graphs, Optimization</i></P>
+
+ <h4>Twitter Trends </h4>
+  <h5><i>2014</i></h5>
+ <p>Developed a geographic visualization of Twitter data across the USA. Used data abstraction, sequences,
+and dictionaries to create a modular program that maps tweets based on sentiments in Python Programming Language. <br> <i>Skills: Python, data visualization </i></P>
+
+
+
 </div>
 
 <div id="section2" class="container-fluid">
+<h1>Contact Via:</h1>
   <div class="row">
+
     <div class="col-md-3">
-      <p>LinkedIn</p>
+      <a href="https://www.linkedin.com/in/yadelab" font-size: 23px>LinkedIn</a>
     </div>
     <div class="col-md-3">        
-      <p>Github</p>      
+      <a href="https://github.com/yadelab">Github</a>      
     </div>
     <div class="col-md-3">        
-      <p>Quora</p>      
+      <a href="https://www.quora.com/profile/Yadel-Abraham">Quora</a>      
     </div>
     
   </div>
